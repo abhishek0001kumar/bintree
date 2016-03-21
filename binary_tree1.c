@@ -57,10 +57,10 @@ void printnodelevel(treenode* root,int i){
     if(root==NULL){
         return;
     }
-    if(i==1){
+    else if(i==1){
         printf("%d\t",root->data);
     }
-    if(i>1){
+    else if(i>1){
         printnodelevel(root->left,i-1);
         printnodelevel(root->right,i-1);
     }
@@ -78,7 +78,7 @@ void printnodel(treenode* root){
 
 void LevelOrder(treenode * root)
 {
-  printnode(root);
+  printnodel(root);
   
 }*/
 
